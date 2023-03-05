@@ -3,9 +3,6 @@ const dateFormatter = (date: string) => {
 	const currentDate = new Date()
 	const diff = currentDate.valueOf() - correctDate.valueOf()
 
-	console.log(currentDate)
-	console.log(correctDate)
-
 	if (diff < 1000) {
 		return 'Только что'
 	}
