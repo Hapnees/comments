@@ -1,9 +1,22 @@
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	background-color: rgba(118, 84, 21, 0.687);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(197, 136, 24);
+}
+
 .comment__wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 
 	overflow: auto;
+
+	scrollbar-width: 5px;
+	scrollbar-color: rgba(118, 84, 21, 0.687) transparent;
 }
 
 .comment__container {
@@ -25,6 +38,9 @@
 }
 
 .comment__top-content__title {
+	max-width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	font-size: 18px;
 	font-weight: 500;
 }
