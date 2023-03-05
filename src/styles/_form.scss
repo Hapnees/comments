@@ -1,0 +1,89 @@
+form[name='comment'] {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 25px;
+
+	border-radius: 6px;
+	border: 1px solid rgb(64, 44, 8);
+
+	padding: 30px 20px;
+}
+
+// NAME
+.form__container__name {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	> input {
+		padding: 3px 5px;
+	}
+}
+
+// BOTTOM CONTENT
+.form__bottom__content {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// TEXT
+.form__wrapper__comment {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.form__container__comment {
+	> textarea {
+		padding: 3px 5px;
+
+		width: 420px;
+		height: 120px;
+	}
+}
+
+.form__comment__title {
+	margin-bottom: 10px;
+}
+
+// DATE
+.form__container__date {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	> input {
+		padding: 2px 4px;
+	}
+}
+
+.form__submit-btn {
+	padding: 8px 12px;
+	cursor: pointer;
+	border-radius: 6px;
+	border: none;
+
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	background-color: rgb(205, 142, 24);
+	transition: box-shadow 0.3s;
+
+	&:hover {
+		box-shadow: 0 0 13px rgb(145, 101, 18);
+	}
+}
+
+.form__error {
+	position: absolute;
+	white-space: nowrap;
+	background-color: rgba(162, 28, 28, 0.647);
+	padding: 5px 10px;
+	border-radius: 6px;
+
+	animation: show 0.3s;
+}

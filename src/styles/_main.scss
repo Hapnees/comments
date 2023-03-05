@@ -1,0 +1,14 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 50px;
+	height: 100%;
+	padding: 10px 0;
+}
+
+.title {
+	font-size: 24px;
+}
